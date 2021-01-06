@@ -1,0 +1,118 @@
+@import 'vars';
+
+footer {
+  background-color: #000000;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  .footer__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 100px;
+  }
+  .footer__brand {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 95px;
+  }
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  .footer__descr {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+    margin-bottom: 35px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  .footer__social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .social__link {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: all 0.3s ease-in-out;
+    width: 51px;
+    height: 51px;
+    svg {
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+  .fb {
+    &:hover {
+      background-color: #3b5998;
+    }
+  }
+  .in {
+    &:hover {
+      background-color: #2867b2;
+    }
+  }
+  .tw {
+    &:hover {
+      background-color: #1da1f2;
+    }
+  }
+  .footer__nav {
+    margin-right: 95px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .nav__title {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  li {
+    margin-bottom: 5px;
+    a {
+      display: block;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 28px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      &:hover {
+        color: $accent;
+        text-decoration: none;
+      }
+    }
+  }
+  .footer__text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #848484;
+    display: block;
+    text-align: center;
+  }
+}
