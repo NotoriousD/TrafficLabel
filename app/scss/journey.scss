@@ -1,6 +1,6 @@
-@import "vars";
-@import "fonts";
-@import "libs";
+@import 'vars';
+@import 'fonts';
+@import 'libs';
 
 ::placeholder {
   color: #666;
@@ -34,7 +34,7 @@ body {
 }
 
 .inner {
-  max-width: 1500px;
+  max-width: 890px;
   width: 100%;
   margin: 0 auto;
   @media (max-width: 1550px) {
@@ -77,18 +77,18 @@ strong {
   background: linear-gradient(90deg, #e53051 0%, #ea5a74 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 107px;
-  padding: 25px 80px;
+  padding: 14px 50px;
   color: #ffffff;
   text-decoration: none;
 }
 
 header {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
   position: relative;
   background-color: #000;
   .top__line {
     padding: 27px 0;
+    margin-bottom: 20px;
     position: relative;
     z-index: 2;
   }
@@ -99,7 +99,7 @@ header {
     justify-content: space-between;
   }
   .brand {
-    max-width: 284px;
+    max-width: 174px;
   }
   .header__menu {
     width: 70%;
@@ -113,14 +113,14 @@ header {
   li {
     a {
       font-weight: 600;
-      font-size: 25px;
-      line-height: 27px;
+      font-size: 15px;
+      line-height: 16px;
       letter-spacing: 0.05em;
       text-transform: capitalize;
       text-decoration: none;
       color: #ffffff;
       padding-bottom: 10px;
-      border-bottom: 5px solid transparent;
+      border-bottom: 3px solid transparent;
       display: block;
       &:hover {
         text-decoration: none;
@@ -188,7 +188,8 @@ header {
       display: block;
     }
     .top__line {
-      padding: 0;
+      padding: 15px 0;
+      margin-bottom: 0;
     }
     .header__menu {
       position: absolute;
@@ -258,23 +259,23 @@ header {
   }
   .advisors {
     position: absolute;
-    background-image: url(../img/journey/bg-advisors.png);
-    width: 335px;
-    height: 470px;
+    background-image: url(../img/journey/bg-advisors2.png);
+    width: 180px;
+    height: 160px;
     background-position: center top;
     background-size: cover;
-    bottom: -27%;
+    bottom: 0;
     left: -5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 35px;
     padding-left: 15px;
   }
   .num {
     font-weight: bold;
-    font-size: 64px;
-    line-height: 70px;
+    font-size: 36px;
+    line-height: 40px;
     text-transform: capitalize;
     color: #ffffff;
     margin-bottom: 12px;
@@ -282,8 +283,8 @@ header {
   }
   .text {
     font-weight: bold;
-    font-size: 19px;
-    line-height: 21px;
+    font-size: 10px;
+    line-height: 12px;
     text-align: center;
     text-transform: capitalize;
     color: #ffffff;
@@ -291,25 +292,25 @@ header {
   }
   .title {
     font-weight: 800;
-    font-size: 47px;
-    line-height: 51px;
+    font-size: 26px;
+    line-height: 28px;
     color: $title;
     letter-spacing: 0.05em;
     text-transform: capitalize;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
   p {
     font-weight: normal;
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 12px;
+    line-height: 23px;
     display: flex;
     align-items: center;
     text-transform: capitalize;
     color: $title;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .journey__link {
-    padding: 10px 20px;
+    padding: 5px 15px;
     background: $accent;
     box-shadow: 8px 8px 18px rgba(230, 49, 82, 0.3);
     border-radius: 50px;
@@ -319,8 +320,8 @@ header {
     flex-direction: row;
     color: #ffffff;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 27px;
+    font-size: 10px;
+    line-height: 15px;
     display: flex;
     align-items: center;
     letter-spacing: 0.05em;
@@ -331,29 +332,19 @@ header {
     }
   }
   .circle {
-    width: 53px;
-    height: 53px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
     margin-left: 15px;
+    svg {
+      max-width: 80%;
+    }
   }
   @media (max-width: 1300px) {
-    .advisors {
-      height: 270px;
-      padding-top: 20px;
-      bottom: -5%;
-    }
-    .num {
-      font-size: 50px;
-      line-height: 55px;
-    }
-    .text {
-      font-size: 15px;
-      line-height: 18px;
-    }
   }
   @media (max-width: 1100px) {
     .journey__thumb {
@@ -362,27 +353,12 @@ header {
     .journey__descr {
       width: 48%;
     }
-    .title {
-      font-size: 35px;
-      line-height: 40px;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 22px;
-    }
   }
   @media (max-width: 1000px) {
     padding: 60px 0;
     .advisors {
-      bottom: -50px;
-      left: -50px;
-    }
-  }
-  @media (max-width: 850px) {
-    .advisors {
-      bottom: -100px;
-      left: -70px;
+      bottom: 0px;
+      left: 0px;
     }
   }
   @media (max-width: 700px) {
@@ -401,15 +377,8 @@ header {
     }
   }
   @media (max-width: 500px) {
-    .title {
-      font-size: 28px;
-      line-height: 34px;
-      text-align: center;
+    .journey__thumb {
       width: 100%;
-    }
-    p {
-      font-size: 16px;
-      line-height: 20px;
     }
     .journey__row {
       align-items: center;
@@ -420,31 +389,43 @@ header {
       flex-direction: column;
       align-items: center;
     }
-    .journey__link {
-      padding: 5px 15px;
-      font-size: 16px;
-    }
-    .circle {
-      width: 40px;
-      height: 40px;
-    }
   }
 }
 
 .advantages {
-  padding: 100px 0;
+  padding-top: 20px;
+  padding-bottom: 42px;
+  .num {
+    position: absolute;
+    background: linear-gradient(90deg, #e53051 0%, #ea5a74 100%);
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 31px;
+    text-transform: capitalize;
+    color: #ffffff;
+    left: 50%;
+    top: -33px;
+    transform: translateX(-50%);
+    box-shadow: 0px 10px 20px 5px rgba(229, 48, 81, 0.3);
+  }
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-gap: 80px;
+    grid-gap: 35px;
   }
   .advantages__item {
-    position: relative;
     background: #ffffff;
-    border-radius: 48.0203px;
-    padding: 30px;
-    padding-top: 100px;
+    position: relative;
+    border-radius: 25px;
+    padding: 20px 17px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,29 +440,10 @@ header {
       box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.4);
     }
   }
-  .num {
-    position: absolute;
-    background: linear-gradient(90deg, #e53051 0%, #ea5a74 100%);
-    width: 115px;
-    height: 115px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 55px;
-    text-transform: capitalize;
-    color: #ffffff;
-    left: 50%;
-    top: -65px;
-    transform: translateX(-50%);
-    box-shadow: 0px 10px 20px 5px rgba(229, 48, 81, 0.3);
-  }
   .advantages__title {
     font-weight: bold;
-    font-size: 24.0101px;
-    line-height: 26px;
+    font-size: 13px;
+    line-height: 14px;
     color: $title;
     text-transform: capitalize;
     text-align: center;
@@ -491,25 +453,20 @@ header {
     display: block;
     text-align: center;
     font-weight: normal;
-    font-size: 18.2477px;
-    line-height: 33px;
+    font-size: 9px;
+    line-height: 12px;
     color: $text;
     text-transform: capitalize;
   }
-  @media (max-width: 1350px) {
-    .advantages__list {
-      grid-gap: 30px;
-    }
-  }
+
   @media (max-width: 900px) {
     padding-top: 50px;
-    .advantages__list {
-      grid-template-columns: 1fr;
-      grid-gap: 80px;
-    }
   }
   @media (max-width: 600px) {
-    padding: 40px 0;
+    .advantages__list {
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+    }
     .advantages__item {
       img {
         max-width: 240px;
@@ -517,28 +474,18 @@ header {
       }
     }
     .advantages__title {
-      margin-bottom: 15px;
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 16px;
+      margin-bottom: 10px;
     }
     .advantages__text {
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 12px;
+      line-height: 16px;
     }
   }
   @media (max-width: 480px) {
     padding: 40px 0;
-    .num {
-      display: none;
-    }
-    .advantages__list {
-      grid-gap: 15px;
-    }
     .advantages__item {
       padding: 20px;
-    }
-    .advantages__list {
-      grid-gap: 15px;
     }
   }
 }
@@ -548,15 +495,15 @@ header {
   padding-bottom: 100px;
   .widget__container {
     background: linear-gradient(90deg, #f6d365 0%, #e53253 100%);
-    border-radius: 60px;
+    border-radius: 33px;
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.2);
   }
   .widget__bg {
     background: url(../img/journey/widget-bg.png) no-repeat center bottom;
     width: 100%;
     height: 100%;
-    padding: 150px 80px;
-    border-radius: 60px;
+    padding: 80px 50px;
+    border-radius: 33px;
   }
   .widget__list {
     display: flex;
@@ -567,8 +514,8 @@ header {
   .title {
     position: relative;
     font-weight: 800;
-    font-size: 22.1757px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     display: flex;
     align-items: center;
     letter-spacing: 0.05em;
@@ -576,11 +523,11 @@ header {
     color: #ffffff;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
     &:before {
-      content: "";
-      width: 8px;
-      height: 8px;
+      content: '';
+      width: 4px;
+      height: 4px;
       border-radius: 50%;
       background: #ffffff;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
@@ -592,8 +539,8 @@ header {
   }
   .num {
     font-weight: 800;
-    font-size: 77.3097px;
-    line-height: 84px;
+    font-size: 44px;
+    line-height: 48px;
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: capitalize;
@@ -620,14 +567,6 @@ header {
   @media (max-width: 600px) {
     padding-top: 0;
     padding-bottom: 40px;
-    .title {
-      font-size: 16px;
-      line-height: 20px;
-    }
-    .num {
-      font-size: 40px;
-      line-height: 46px;
-    }
   }
   @media (max-width: 480px) {
     .widget__list {
@@ -640,31 +579,31 @@ header {
 }
 
 .next {
-  padding: 100px 0;
-  padding-bottom: 190px;
+  padding: 0;
+  padding-bottom: 90px;
   .next__row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 65px;
+    grid-gap: 40px;
   }
   .title {
-    color: $title;
     font-weight: 800;
-    font-size: 47px;
-    line-height: 51px;
-    display: flex;
-    align-items: center;
+    font-size: 26px;
+    line-height: 28px;
+    color: $title;
     letter-spacing: 0.05em;
     text-transform: capitalize;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
   p {
     font-weight: normal;
-    font-size: 22px;
-    line-height: 40px;
-    letter-spacing: 0.05em;
+    font-size: 12px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
     text-transform: capitalize;
-    margin-bottom: 0;
+    color: $title;
+    margin-bottom: 20px;
   }
   img {
     max-width: 100%;
@@ -683,19 +622,18 @@ header {
   @media (max-width: 600px) {
     padding: 40px 0;
     padding-top: 20px;
+  }
+  @media (max-width: 500px) {
+    .next__row {
+      grid-gap: 15px;
+    }
     .title {
-      font-size: 24px;
       text-align: center;
-      margin-bottom: 15px;
-      width: 100%;
-      justify-content: center;
     }
     p {
-      font-size: 16px;
-      line-height: 20px;
       text-align: center;
     }
   }
 }
 
-@import "media"; // Always at the end
+@import 'media'; // Always at the end

@@ -1,6 +1,6 @@
-@import "vars";
-@import "fonts";
-@import "libs";
+@import 'vars';
+@import 'fonts';
+@import 'libs';
 
 ::placeholder {
   color: #666;
@@ -34,7 +34,7 @@ body {
 }
 
 .inner {
-  max-width: 1500px;
+  max-width: 890px;
   width: 100%;
   margin: 0 auto;
   @media (max-width: 1550px) {
@@ -77,7 +77,7 @@ strong {
   background: linear-gradient(90deg, #e53051 0%, #ea5a74 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 107px;
-  padding: 25px 80px;
+  padding: 14px 50px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -88,7 +88,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
@@ -112,7 +112,7 @@ header {
     justify-content: space-between;
   }
   .brand {
-    max-width: 284px;
+    max-width: 174px;
   }
   .header__menu {
     width: 70%;
@@ -126,14 +126,14 @@ header {
   li {
     a {
       font-weight: 600;
-      font-size: 25px;
-      line-height: 27px;
+      font-size: 15px;
+      line-height: 16px;
       letter-spacing: 0.05em;
       text-transform: capitalize;
       text-decoration: none;
       color: #ffffff;
       padding-bottom: 10px;
-      border-bottom: 5px solid transparent;
+      border-bottom: 3px solid transparent;
       display: block;
       &:hover {
         text-decoration: none;
@@ -148,10 +148,10 @@ header {
     }
   }
   .header__bottom {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 250px;
     position: relative;
-    background-position: 100% 0;
+    background-position: 70% 0;
     background-repeat: no-repeat;
   }
   .header__banner {
@@ -171,26 +171,26 @@ header {
   }
   .site__title {
     font-weight: 800;
-    font-size: 120px;
-    line-height: 131px;
+    font-size: 70px;
+    line-height: 75px;
     letter-spacing: 0.05em;
     text-transform: capitalize;
     color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 50px;
+    margin-bottom: 15px;
   }
   .site__description {
     font-weight: normal;
-    font-size: 30.0654px;
-    line-height: 43px;
+    font-size: 16px;
+    line-height: 23px;
     text-transform: capitalize;
     color: #f3f3f3;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
   .banner__btn {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -374,18 +374,18 @@ header {
 }
 
 .advantages {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 42px;
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-gap: 80px;
+    grid-gap: 55px;
   }
   .advantages__item {
     background: #ffffff;
-    border-radius: 48.0203px;
-    padding: 30px;
+    border-radius: 25px;
+    padding: 20px 17px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -402,8 +402,8 @@ header {
   }
   .advantages__title {
     font-weight: bold;
-    font-size: 24.0101px;
-    line-height: 26px;
+    font-size: 13px;
+    line-height: 14px;
     color: $title;
     text-transform: capitalize;
     text-align: center;
@@ -413,8 +413,8 @@ header {
     display: block;
     text-align: center;
     font-weight: normal;
-    font-size: 18.2477px;
-    line-height: 33px;
+    font-size: 9px;
+    line-height: 12px;
     color: $text;
     text-transform: capitalize;
   }
@@ -458,17 +458,17 @@ header {
 }
 
 .services {
-  padding-bottom: 160px;
+  padding-bottom: 70px;
   .section__title {
-    padding: 60px;
+    padding: 40px 0;
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     &:after {
-      content: "";
+      content: '';
       width: 100%;
       height: 3px;
       background-color: #e8e8e8;
@@ -480,10 +480,10 @@ header {
   }
   h2 {
     background-color: #ffffff;
-    padding: 0 50px;
+    padding: 0 32px;
     font-weight: 800;
-    font-size: 47px;
-    line-height: 51px;
+    font-size: 23px;
+    line-height: 25px;
     letter-spacing: 0.05em;
     text-transform: capitalize;
     color: $title;
@@ -494,19 +494,25 @@ header {
   .services__list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 72px;
+    grid-gap: 40px;
   }
   .services__item {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 112px;
+    height: 112px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    box-shadow: 0px 25.5911px 241.769px rgba(0, 0, 0, 0.03), 0px 16.5868px 141.591px rgba(0, 0, 0, 0.0227778),
-      0px 9.85732px 77.0078px rgba(0, 0, 0, 0.0182222), 0px 5.11822px 39.2874px rgba(0, 0, 0, 0.015),
-      0px 2.0852px 19.6997px rgba(0, 0, 0, 0.0117778), 0px 0.47391px 9.51405px rgba(0, 0, 0, 0.00722222);
+    box-shadow: 0px 25.5911px 241.769px rgba(0, 0, 0, 0.03),
+      0px 16.5868px 141.591px rgba(0, 0, 0, 0.0227778),
+      0px 9.85732px 77.0078px rgba(0, 0, 0, 0.0182222),
+      0px 5.11822px 39.2874px rgba(0, 0, 0, 0.015),
+      0px 2.0852px 19.6997px rgba(0, 0, 0, 0.0117778),
+      0px 0.47391px 9.51405px rgba(0, 0, 0, 0.00722222);
+    img {
+      max-width: 65%;
+    }
   }
   @media (max-width: 1860px) {
     .services__list {
@@ -584,10 +590,11 @@ header {
 }
 
 .section__form {
-  padding: 120px 0;
+  padding: 100px 0;
+  padding-top: 70px;
   background: #e9e9e9;
   .form__container {
-    max-width: 810px;
+    max-width: 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -595,8 +602,8 @@ header {
   }
   .form__title {
     font-weight: 600;
-    font-size: 45px;
-    line-height: 49px;
+    font-size: 23px;
+    line-height: 25px;
     text-align: center;
     color: $title;
     letter-spacing: 0.05em;
@@ -605,15 +612,15 @@ header {
   }
   .form__descr {
     font-weight: normal;
-    font-size: 25px;
-    line-height: 27px;
+    font-size: 15px;
+    line-height: 25px;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: capitalize;
     color: $title;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .sec__form {
     width: 100%;
@@ -623,16 +630,15 @@ header {
     align-items: center;
   }
   .form__field {
-    width: 70%;
+    width: 60%;
     input {
       background: #ffffff;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
       border-radius: 49px;
-      height: 80px;
-      padding-left: 44px;
+      height: 50px;
+      padding-left: 33px;
       font-weight: normal;
-      font-size: 23px;
-      line-height: 25px;
+      font-size: 13px;
       letter-spacing: 0.05em;
       color: #6f6f6f;
       border: 0;
@@ -640,13 +646,12 @@ header {
     }
   }
   .form__sbt {
-    width: 25%;
+    width: 35%;
   }
   .form__submit {
     box-shadow: 8px 8px 18px rgba(230, 49, 82, 0.3);
     font-weight: normal;
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 13px;
     letter-spacing: 1.1677px;
     text-transform: capitalize;
     text-align: center;
@@ -727,4 +732,4 @@ header {
   }
 }
 
-@import "media"; // Always at the end
+@import 'media'; // Always at the end

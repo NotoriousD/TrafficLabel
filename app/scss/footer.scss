@@ -1,9 +1,9 @@
-@import "vars";
+@import 'vars';
 
 footer {
   background-color: #000000;
-  padding-top: 120px;
-  padding-bottom: 100px;
+  padding-top: 90px;
+  padding-bottom: 70px;
   .footer__row {
     display: flex;
     flex-direction: row;
@@ -16,16 +16,19 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-right: 95px;
+    margin-right: 75px;
   }
   .footer__logo {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    img {
+      width: 230px;
+    }
   }
   .footer__descr {
     font-weight: normal;
-    font-size: 22px;
-    line-height: 29px;
-    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 25px;
     letter-spacing: 0.05em;
     text-transform: capitalize;
     color: #ffffff;
@@ -42,12 +45,14 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 15px;
     transition: all 0.3s ease-in-out;
-    width: 51px;
-    height: 51px;
+    width: 35px;
+    height: 35px;
     svg {
       transition: all 0.3s ease-in-out;
+      width: 17px;
+      height: 20px;
     }
     &:hover {
       svg {
@@ -79,8 +84,8 @@ footer {
   .nav__title {
     display: block;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 22px;
     letter-spacing: 0.05em;
     text-transform: capitalize;
     color: #ffffff;
@@ -91,8 +96,8 @@ footer {
     a {
       display: block;
       font-weight: normal;
-      font-size: 22px;
-      line-height: 28px;
+      font-size: 16px;
+      line-height: 20px;
       display: flex;
       align-items: center;
       letter-spacing: 0.05em;
@@ -107,8 +112,8 @@ footer {
   }
   .footer__text {
     font-weight: bold;
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 22px;
     letter-spacing: 0.05em;
     text-transform: capitalize;
     color: #848484;
