@@ -87,6 +87,8 @@ header {
     padding-bottom: 30px;
     position: relative;
     background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center top;
     .top__line {
         padding: 27px 0;
         position: relative;
@@ -129,12 +131,6 @@ header {
             }
         }
     }
-    .active {
-        a {
-            border-color: #ffffff;
-            color: #ffffff;
-        }
-    }
     .header__banner {
         padding-top: 70px;
         display: flex;
@@ -155,6 +151,144 @@ header {
         text-transform: capitalize;
         margin-bottom: 70px;
         color: #ffffff;
+    }
+    li.current-menu-item {
+        a {
+            border-color: #fff;
+            color: #fff;
+        }
+    }
+    .hamburger {
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+        display: none;
+    }
+    .hamburger-inner {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        span {
+            width: 100%;
+            height: 1px;
+            background-color: #ffffff;
+            display: block;
+            position: absolute;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    span.top {
+        top: 0;
+        left: 0;
+    }
+    span.middle {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+    span.bottom {
+        bottom: 0;
+        left: 0;
+    }
+    .hamburger.active {
+        span.middle {
+            opacity: 0;
+            visibility: hidden;
+        }
+        span.top {
+            transform: rotate(-35deg) translateY(-50%);
+            top: 50%;
+        }
+        span.bottom {
+            transform: rotate(35deg) translateY(-50%);
+            bottom: 50%;
+        }
+    }
+    @media (max-width: 1350px) {
+        padding-top: 0;
+        .header__banner {
+            padding-top: 0;
+            img {
+                max-width: 100%;
+            }
+        }
+        .site__title {
+            font-size: 70px;
+            line-height: 80px;
+        }
+    }
+    @media (max-width: 1000px) {
+        .site__title {
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 25px;
+        }
+    }
+    @media (max-width: 950px) {
+        .hamburger {
+            display: block;
+        }
+        .top__line {
+            padding: 0;
+        }
+        .header__menu {
+            position: absolute;
+            height: 100vh;
+            width: 280px;
+            background-color: $accent;
+            top: -20px;
+            left: 0;
+            padding: 15px;
+            padding-top: 50px;
+            z-index: 100;
+            transform: translateX(-280px);
+            transition: all 0.3s ease-in-out;
+        }
+        .header__menu.active {
+            transform: translateX(0);
+        }
+        .header__descr {
+            z-index: 0;
+        }
+        ul {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        li {
+            margin-bottom: 20px;
+            a {
+                font-size: 24px;
+                &:hover {
+                    color: #ffffff;
+                    border-color: #ffffff;
+                }
+            }
+        }
+        li.current-menu-item {
+            a {
+                color: #ffffff;
+                border-color: #ffffff;
+            }
+        }
+        padding: 10px 0;
+    }
+    @media (max-width: 700px) {
+        .header__banner {
+            background-image: none;
+        }
+    }
+    @media (max-width: 550px) {
+        .site__title {
+            font-size: 35px;
+        }
+        .brand {
+            img {
+                width: 190px;
+            }
+        }
     }
 }
 
@@ -259,6 +393,76 @@ header {
             background-color: $accent;
         }
     }
+    @media (max-width: 1350px) {
+        padding-top: 50px;
+        &:after {
+            display: none;
+        }
+    }
+    @media (max-width: 1250px) {
+        p {
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+        }
+        .team__list {
+            padding-top: 50px;
+        }
+    }
+    @media (max-width: 1200px) {
+        .team__list {
+            padding-bottom: 100px;
+        }
+        .team__item {
+            width: 30%;
+        }
+    }
+    @media (max-width: 1000px) {
+        background-image: none;
+    }
+    @media (max-width: 850px) {
+        .name {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .position {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .descr {
+            padding: 15px 0;
+            padding-bottom: 25px;
+        }
+        .info {
+            width: 25px;
+            height: 25px;
+            right: 5px;
+            svg {
+                height: 15px;
+            }
+        }
+    }
+    @media (max-width: 700px) {
+        .team__list {
+            gap: 70px 15px;
+        }
+        .team__item {
+            width: 48%;
+        }
+    }
+    @media (max-width: 450px) {
+        p {
+            font-size: 16px;
+        }
+        .team__list {
+            padding-top: 20px;
+            gap: 70px;
+        }
+        .team__item {
+            width: 100%;
+            text-align: center;
+        }
+    }
 }
 
 .mfp-close-btn-in .mfp-close {
@@ -320,6 +524,62 @@ header {
         text-align: center;
         text-transform: capitalize;
         color: #303030;
+    }
+    @media (max-width: 1450px) {
+        .popup__content {
+            padding: 40px;
+        }
+        .name {
+            font-size: 35px;
+            line-height: 40px;
+        }
+        .position {
+            font-size: 28px;
+            line-height: 34px;
+            margin-bottom: 15px;
+        }
+        .text {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    @media (max-width: 600px) {
+        .popup__content {
+            border-radius: 15px;
+            padding: 15px;
+            img {
+                margin-bottom: 15px;
+            }
+        }
+        .name {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 10px;
+        }
+        .position {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        .text {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        .popup__close {
+            right: 10px;
+            top: 10px;
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        .popup__content {
+            img {
+                width: 160px;
+            }
+        }
     }
 }
 

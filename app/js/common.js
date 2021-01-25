@@ -3,6 +3,21 @@ $(function () {
     $('.tab__container').height(height);
   };
 
+  $('.hamburger').on('click', function() {
+    $(this).toggleClass('active');
+    $('.header__menu').toggleClass('active');
+  });
+
+  const wW = $(window).width();
+
+  if(wW <= 950){
+    $(window).on('scroll', function(){
+      if($(window).scrollTop() > 90){
+        $('.header__menu').removeClass('active');
+      }
+    })
+  }
+
   const currentTabHeight = $('.tab.active').outerHeight();
   handleChangeHeight(currentTabHeight);
 
@@ -23,4 +38,34 @@ $(function () {
   $('.popup__close').on('click', () => {
     $.magnificPopup.close();
   });
+
+  const casinos = $('.casinos__list').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 6,
+    slidesToScroll: 2,
+    centerMode: true,
+    infinite: false, 
+    initialSlide: 2,
+    variableWidth: true,
+    speed: 1200,
+    responsive: [
+      {
+        breakpoint:600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 0
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0
+        }
+      }
+    ]
+  })
 });
